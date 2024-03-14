@@ -4,7 +4,9 @@ import router from './router'
 import store from './store'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-Vue.use(Vuetify)
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
+Vue.use(Vuetify,
+  { iconfont: 'mdi' })
 
 Vue.config.productionTip = false
 
@@ -13,3 +15,12 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+/*
+import Vue from "vue";
+import vuetify from "./plugins/vuetify";
+new Vue({
+  vuetify,
+  render: h => h(App)
+}).$mount("#app");
+
+*/
